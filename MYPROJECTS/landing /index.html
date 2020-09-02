@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">World</a>
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+
+
+            </div>
+        </header>
+        <img src="./jpg/bg.jpg" class="bg">
+        <img src="./jpg/bird.png" class="bird">
+
+        <div class="content">
+            <h2>Some text here <br><span>And here</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nemo id quam quasi numquam laboriosam
+                magnam eligendi distinctio.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nemo id quam
+                quasi numquam laboriosam
+                magnam eligendi distinctioLorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nemo id quam
+                quasi numquam laboriosam
+                magnam eligendi distinctio</p>
+        </div>
+        <div class='btn'>
+            <a href="#">VOTE +1</a>
+        </div>
+
+        <ul class="svg">
+            <li class="icon1"><a href="#"><i class="fa fa-facebook"></i>
+
+                </a></li>
+            <li class="icon1"><a href="#"><i class="fa fa-instagram"></i>
+
+                </a></li>
+            <li class="icon1"><a href="#"><i class="fa fa-twitter"></i>
+
+                </a></li>
+
+        </ul>
+
+        <!-- <div class="textBox">
+            <div class="box">
+                <h3>Defender this</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolores sunt minus suscipit culpa
+                    quibusdam iste deleniti.</p>
+
+            </div>
+            <div class="box">
+                <h3>How to Defender this too</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolores sunt minus suscipit culpa
+                    quibusdam iste deleniti.</p>
+
+            </div>
+        </div> -->
+    </section>
+
+    <script type="text/javascript">
+        document.addEventListener('mousemove', function (e) {
+            let bg = document.querySelector(".bg");
+            let bird = document.querySelector(".bird");
+            let content = document.querySelector(".content");
+            let button = document.querySelector(".btn");
+
+
+
+            bg.style.width = 100 + e.pageX / 100 + "%";
+            // bg.style.height = 100 + e.pageX / 100 + "%";
+
+            bird.style.right = 100 + e.pageX / 2 + "px";
+
+            content.style.left = 100 + e.pageX / 2 + "px";
+            button.style.left = 100 + e.pageX / 2.5 + "px";
+        });
+    </script>
+
+</body>
+
+</html>

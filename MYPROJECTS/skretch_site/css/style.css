@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+scroll-behavior: smooth;
+font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: #111;
+}
+
+section{
+    position: relative;
+    padding: 100px;
+}
+
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header .logo{
+color: #fff;
+text-decoration: none;
+font-size: 1.2em;
+}
+
+.header .toggle img{
+max-width: 40px;
+cursor: pointer;
+
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+
+
+
+
+}
+
+
+.fitBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover   ;
+    opacity: 0.7    ;
+}
+
+
+
+.banner .content{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.btn{
+    position: relative;   
+    display: inline-block;
+    margin-top:30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #111;    
+    text-decoration: none;
+    transition-duration: 0.7s;
+    font-weight: 400;
+
+
+
+}
+
+.btn:hover {
+    background-color: #111; /* black */
+    color: white;
+    font-weight: 400;
+  }
+
+.btn1{
+    position: relative;   
+    display: inline-block;
+    margin-top:30px;
+    padding: 10px 30px;
+    background: #111;
+    color: #fff;    
+    border: 1px solid #fff;
+    text-decoration: none;
+    transition-duration: 0.7s;
+    font-weight: 400;
+}
+
+.btn1:hover {
+    background-color: #fff; /* black */
+    color: #111 ;
+    font-weight: 400;
+  }
+
+
+
+
+
+.banner .content h2{
+color: #fff;
+font-weight: 700;
+font-size: 4.4em;
+
+
+}
+
+.banner .content p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.1em;
+    max-width: 550px;
+    
+    
+ }
+ 
+ .about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .contentBx{
+      min-width: 50%;
+      width: 50%;
+      text-align: end;
+      padding-right: 40px;
+
+
+
+  }
+
+  .tittleText{
+      font-weight: 600;
+      color: #fff;
+      font-size: 2em;
+      margin-bottom: 10px;
+  }
+
+ .text{
+      color:#fff;
+}
+
+.about  .imgBx{
+position: relative;
+min-width: 50%;
+width: 50%;
+min-height: 500px;
+
+}
+
+.fitBg1{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover   ;
+    opacity: 0.7    ;
+}
+
+.banner2, .banner3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+
+.banner2:before,
+.banner3:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        z-index: 1;
+        background: linear-gradient(to top, #111, transparent);
+    
+    
+    
+    
+    }
+
+
+.banner2:after,
+.banner3:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #111, transparent);
+
+
+
+
+}
+    
+
+.places{
+    text-align: center;
+
+}
+
+.places .conetnt{
+    text-align: center;
+
+}
+
+.places .placesList{
+position: relative;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin-top: 40px;
+
+}
+.places .placesList .box{
+      position: relative;
+      min-width:350px;
+      height: 480px;
+      background: #191919;
+      transition: 0.5s;
+      margin: 10px;
+      /* display: flex;
+      align-items:center;
+      margin-left: 50px; */
+
+
+}
+
+.places .placesList:hover .box{
+    opacity: 0.5;
+}
+    
+
+.places .placesList .box:hover{
+    opacity: 1;
+    }
+
+.places .placesList .box .imgBx{
+    position: relative; 
+    width: 100%;
+    height:400px;
+
+
+}
+
+
+.places .placesList .box .content
+{
+width: 100%;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.places .placesList .box .content h2{
+color: #fff;
+font-weight: 500;
+line-height: 1.2em;
+
+}
+
+
+.places .placesList .box .content h2  span{
+font-size: 0.8em;
+font-weight: 300;
+opacity: 0.5;
+color: #fff;
+}
+
+
+.footer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+flex-direction: column;
+
+}
+ 
+
+
+.footer  .sci{
+position: relative;
+display: flex;
+
+}
+
+.footer  .sci li{
+list-style: none;
+}
+.footer  .sci li a{
+    text-decoration: none;
+margin: 0 20px;
+}
+
+.footer  .sci li a img{
+ filter: invert(1);
+max-width:40px;
+ 
+}
+
+.copyright{
+margin-top: 20px;
+color: #fff;
+font-size: 18px;
+font-weight: 300;
+color: #666666;
+text-align: center;
+
+}
+
+
+
+
+.copyright a {
+color: rgb(202, 202, 202);
+}
+
+
+
+@media (max-width: 765px)
+{
+    section {
+         padding: 40px;
+    }
+
+    .banner .content h2 {
+        font-size: 2.2em;
+    }
+
+    .banner .content p {
+        font-size: 0.8em;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx {
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .fitBg1{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.7;   
+    }
+    .about .imgBx{
+        min-height: 250px;
+    }
+
+    .btn{
+        margin-bottom: 33px;
+    }
+
+    .places .placesList .box{
+        position: relative;
+        max-width: 350px;
+        min-width: initial;
+        width: 350px;
+        height: 400px;
+        
+    }
+    .places .placesList .box .imgBx{
+        height: 330px;
+    
+    }
+
+    .footer .sci li a img {
+        filter:invert(1);
+        max-width: 30px;
+    }
+}
+ 
